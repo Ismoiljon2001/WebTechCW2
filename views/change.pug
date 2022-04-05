@@ -1,0 +1,25 @@
+extends layout
+
+block content
+    if todo == null
+        if error
+            p.error Please write something 
+        form.form(method="POST")
+            label(for='name') Name:
+            input.name(type='text', id='name' placeholder='James Bond' name='name')
+            label(for='description') Description:
+            textarea.description(name="description", id='description', cols="30", rows="10", placeholder='Write something here') 
+            button.btn Add
+    else
+        if error
+            p.error Please fill the inputs correctly 
+        form.form(method="POST")
+            label(for='name') Name:
+            input.name(type='text', id='name', placeholder='Todo', name='name', value= todo.name)
+            label(for='email') Desciption:
+            textarea.description(id='description', name='description')= todo.description
+            .done_container 
+                label(for='done') Done?
+                - var done_check = `${todo.done == true}`
+                input.done(type="checkbox", id='done', name='done', checked = done_check)
+            button.btn Save

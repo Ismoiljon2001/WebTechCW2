@@ -1,0 +1,31 @@
+doctype html
+html(lang="en")
+    head
+        title Note-taking App
+        link(rel="stylesheet", href="/static/style.css")
+        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css')
+    body
+        .navbar
+            a.logo(href="/") NoteTak
+                span.logo_ ingApp
+            nav.nav
+                ul
+                    li 
+                        a(href="add") Create a Note
+                    li 
+                        a(href="/") See Notes
+
+        .wrapper
+            block content
+
+        footer.footer
+            .footer_map
+                ul.map
+                    li Footer of the Application
+                    br
+                    li
+                        a(href="/add")  Add a Note
+                    li
+                        a(href="/")  All Notes
+            .content
+                p “I hope All rights are reserved”.
