@@ -6,9 +6,9 @@ This is a basic To Do App which was done for Web Technology module by 00011064
 ## Usage
 
 Here are some links to the open sources that was used for this particular project
-[Source Code](https://github.com/00010386/cw2-todo.git)
-[Glitch](https://dirt-tame-gouda.glitch.me)
-[GlitchCode](https://glitch.com/edit/#!/dirt-tame-gouda)
+[Source Code](https://github.com/Ismoiljon2001/WebTechCW2.git)
+[Glitch]()
+[GlitchCode]()
 
 To run the app locally, please follow the steps below:
 
