@@ -7,8 +7,8 @@ This is a basic To Do App which was done for Web Technology module by 00011064
 
 Here are some links to the open sources that was used for this particular project
 [Source Code](https://github.com/Ismoiljon2001/WebTechCW2.git)
-[Glitch]()
-[GlitchCode]()
+[Glitch](https://reinvented-copper-durian.glitch.me)
+[GlitchCode](https://glitch.com/edit/#!/reinvented-copper-durian)
 
 To run the app locally, please follow the steps below:
 
