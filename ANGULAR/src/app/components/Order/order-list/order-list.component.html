@@ -1,0 +1,30 @@
+<div class="container my-5">
+    <h1 class="mb-3">Orers</h1>
+
+    <table class="table" *ngIf="order && order.length > 0">
+        <thead>
+            <tr>
+                <th>orderId</th>
+                <th>productId</th>
+                <th>clientId</th>
+                <th>quantity</th>
+               
+                <th> </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let Order of order">
+
+                <td>{{Order.orderId}}</td>
+                <td>{{Order.productId}}</td>
+        
+                <td>{{Order.clientId}}</td>
+                <td>{{Order.quantity}}</td>       
+               
+                <td><a [routerLink]="['/Order', 'edit', Order.orderId ]">View</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <p *ngIf="!order || order.length <= 0">No Orders were found</p>
+
+ </div>

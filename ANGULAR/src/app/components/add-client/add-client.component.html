@@ -1,0 +1,35 @@
+<div class="container my-5">
+    <h1 class="mb-3">Add New Client</h1>
+
+    <div class="row">
+      <div class="col-6">
+        <form #form="ngForm" (submit)="addClient()">
+          <div class="mb-3">
+            <label for="clientname" class="form-label">FirstName</label>
+            <input type="text" class="form-control" id="clientname " name="clientname" [(ngModel)] = addClientRequest.firstName>
+          </div>     
+
+      
+
+           <div class="mb-3">
+            <label for="lastName" class="form-label">LastName</label>
+            <input type="text" class="form-control" id="lastName " name="lastName" [(ngModel)] = addClientRequest.lastName>
+         </div>
+
+         <div class="mb-3">
+          <label for="phoneNumber" class="form-label">PhoneNumber</label>
+          <input type="number" class="form-control" id="phoneNumber " name="phoneNumber" [(ngModel)] = addClientRequest.phoneNumber>
+       </div>
+
+       <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email " name="email" [(ngModel)] = addClientRequest.email>
+     </div>
+
+          
+          <button type="submit" class="btn btn-primary">Submit</button>
+      </form> 
+      </div>
+    </div>
+    
+</div> 

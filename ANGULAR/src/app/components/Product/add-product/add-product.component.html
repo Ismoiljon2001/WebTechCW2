@@ -1,0 +1,39 @@
+<div class="container my-5">
+    <h1 class="mb-3">Add New Product</h1>
+
+    <div class="row">
+      <div class="col-6">
+        <form #form="ngForm" (submit)="addProduct()">
+          <div class="mb-3">
+            <label for="productName" class="form-label">productName</label>
+            <input type="text" class="form-control" id="productName " name="productName" [(ngModel)] = addProductRequest.productName>
+          </div>     
+
+      
+
+           <div class="mb-3">
+            <label for="productType" class="form-label">productType</label>
+            <input type="text" class="form-control" id="productType " name="productType" [(ngModel)] = addProductRequest.productType>
+         </div>
+
+         <div class="mb-3">
+          <label for="size" class="form-label">size</label>
+          <input type="number" class="form-control" id="size " name="size" [(ngModel)] = addProductRequest.size>
+       </div>
+
+       <div class="mb-3">
+        <label for="color" class="form-label">color</label>
+        <input type="text" class="form-control" id="color " name="color" [(ngModel)] = addProductRequest.color>
+     </div>
+
+     <div class="mb-3">
+      <label for="prize" class="form-label">prize</label>
+      <input type="number" class="form-control" id="prize " name="prize" [(ngModel)] = addProductRequest.prize>
+   </div>
+         
+          <button type="submit" class="btn btn-primary">Submit</button>
+      </form> 
+      </div>
+    </div>
+    
+</div> 

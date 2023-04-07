@@ -1,0 +1,40 @@
+<div class="container my-5">
+    <h1 class="mb-3">Edit Product</h1>
+
+    <div class="row">
+      <div class="col-6">
+        <form #form = "ngForm" (ngSubmit)="updateProduct()">
+          <div class="mb-3">
+            <label for="productName" class="form-label">productName</label>
+            <input type="text" class="form-control" id="productName " name="productName" [(ngModel)] = productDetails.productName>
+          </div>     
+
+          
+
+           <div class="mb-3">
+            <label for="productType" class="form-label">productType</label>
+            <input type="text" class="form-control" id="productType " name="productType" [(ngModel)] = productDetails.productType>
+         </div>
+
+         <div class="mb-3">
+          <label for="size" class="form-label">size</label>
+          <input type="number" class="form-control" id="size " name="size" [(ngModel)] = productDetails.size>
+       </div>
+
+       <div class="mb-3">
+        <label for="color" class="form-label">color</label>
+        <input type="text" class="form-control" id="color " name="color" [(ngModel)] = productDetails.color>
+     </div>
+
+     <div class="mb-3">
+      <label for="prize" class="form-label">prize</label>
+      <input type="number" class="form-control" id="prize " name="prize" [(ngModel)] = productDetails.prize>
+   </div>
+         
+   <button type="submit" class="btn btn-primary">Submit</button>
+   <button type="button" class="btn btn-danger" (click)="deleteProduct()">Delete</button>
+</form> 
+      </div>
+    </div>
+    
+</div> 

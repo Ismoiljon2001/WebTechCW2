@@ -1,0 +1,33 @@
+<div class="container my-5">
+    <h1 class="mb-3">Add New Order</h1>
+
+    <div class="row">
+      <div class="col-6">
+        <form #form="ngForm" (submit)="addOrder()">
+          
+
+      
+
+           <div class="mb-3">
+            <label for="productId" class="form-label">productId</label>
+            <input type="number" class="form-control" id="productId " name="productId" [(ngModel)] = addOrderRequest.productId>
+         </div>
+
+         <div class="mb-3">
+          <label for="clientId" class="form-label">clientId</label>
+          <input type="number" class="form-control" id="clientId " name="clientId" [(ngModel)] = addOrderRequest.clientId>
+       </div>
+
+       <div class="mb-3">
+        <label for="quantity" class="form-label">quantity</label>
+        <input type="number" class="form-control" id="quantity " name="quantity" [(ngModel)] = addOrderRequest.quantity>
+     </div>
+
+    
+         
+          <button type="submit" class="btn btn-primary">Submit</button>
+      </form> 
+      </div>
+    </div>
+    
+</div> 
